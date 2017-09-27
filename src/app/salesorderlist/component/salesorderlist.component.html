@@ -1,0 +1,97 @@
+<!--Sales Order List-->
+
+<div class="pagemargin container">
+
+<div class="row">
+ 
+  <!--Division first-->
+  <div class="col-sm-4">
+
+    <input type="radio" name="showall" value="showall" checked> Show All &nbsp;
+    <input type="radio" name="showall" value="showselected"> Show Selected<br>
+
+  </div>
+  
+ <div class="col-sm-2"></div>
+
+
+  <!--division second-->
+  <div class="row">
+
+    <div class="col-sm-6">
+      <div class="row">
+        <div class="col-sm-4">
+        <label for="Month">Year</label>
+          <select class="form-control">
+  <option value="2000">2000</option>
+  <option value="2001">2001</option>
+  <option value="2002">2002</option>
+  <option value="2003">2003</option>
+</select>
+        </div>
+        <div class="col-sm-4">
+          <label for="year">Quarter</label>
+          <select class="form-control">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select>
+        </div>
+        <div class="col-sm-4">
+            <label for="year">Year</label>
+
+          <select class="form-control ">
+  <option value="January" >January</option>
+  <option value="February">February</option>
+  <option value="March">March</option>
+  <option value="April">April</option>
+   <option value="May">May </option>
+    <option value="June">June </option>
+     <option value="July">July </option>
+      <option value="August">August</option>
+       <option value="September">September</option>
+        <option value="October">October</option>
+         <option value="November">November</option>
+          <option value="December">December</option>
+</select>
+        <!--  -->
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="row">
+        <label for="startdate" class="col-sm-4">Start Date</label>
+        <input type="date" class="form-control col-sm-6" style="margin-bottom:5px;margin-left: 14px;">
+      </div>
+      <div class="row">
+        <label for="enddate" class="col-sm-4">End Date</label>
+        <input type="date" class="form-control col-sm-6" style="margin-left: 14px;margin-bottom: 5px;">
+      </div>
+    </div>
+
+
+  </div>
+
+  <app-saleslistgrid> </app-saleslistgrid>
+
+      <div class="row" style="margin-top: 10px;">   
+      <label for="amounts" class="col-sm-6"> Amounts are in</label>
+      <input type="text" class="form-control col-sm-4" placeholder="currency" readonly>  
+      </div><br>
+ <button type="button" class="btn btn-primary" (click)="gotosalesorderform()" style="margin-left:400px; width: 70px; height:38px;margin-top: 10px;">
+   New</button></div><br>
+ <input type="text" class="form-control col-sm-6" placeholder="company name" readonly>
+   
+
+
+  
+    
+   
+      
+
+         

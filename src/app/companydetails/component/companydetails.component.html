@@ -1,0 +1,257 @@
+
+<div class="container">
+
+        <form #frm="ngForm" (ngSubmit)="onSubmit()" [formGroup]="myform" validate>
+       <div class="row">
+    
+   <div class="col-md-6 margin" >
+   <div class="form-group row">
+    
+      <label for="CompanyName" class=" col-sm-6 col-form-label">Company Name</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="CompanyName" placeholder="Enter Company Name" autofocus
+    formControlName="CompanyName" required>
+          <div    class="form-control-feedback"
+        *ngIf="CompanyName.errors && (CompanyName.dirty || CompanyName.touched) ">
+                     
+        </div>
+      </div>
+          </div>
+
+         <div class="form-group row">
+
+      <label for="CompanyRegno" class=" col-sm-6 col-form-label">Company Registration No</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="CompanyRegno" placeholder="Enter Company Registration No" autofocus
+    formControlName="CompanyRegno" required>
+     <div class="form-control-feedback"
+        *ngIf="CompanyRegno.errors && (CompanyRegno.dirty || CompanyRegno.touched) ">
+                     
+     </div>
+      </div>
+          </div>
+
+          <div class="form-group row">
+    
+      <label for="CompanyTelephone" class=" col-sm-6 col-form-label">Telephone</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="CompanyTelephone" placeholder="Enter Telephone" autofocus
+    formControlName="CompanyTelephone" required maxlength="10" minlength="10">
+          <div    class="form-control-feedback"
+        *ngIf="CompanyTelephone.errors && (CompanyTelephone.dirty || CompanyTelephone.touched) ">
+   
+       </div>
+      </div>
+          </div>
+
+  <div class="form-group row">
+    
+      <label for="CompanyEmail" class=" col-sm-6 col-form-label">Email</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="CompanyEmail" placeholder="Enter Email" autofocus
+    formControlName="CompanyEmail" required>
+          <div    class="form-control-feedback"
+        *ngIf="CompanyEmail.errors && (CompanyEmail.dirty || CompanyEmail.touched) ">
+                        
+      </div>
+      </div>
+          </div>
+
+      <div class="form-group row">
+    
+      <label for="FinancialYrStartDate" class=" col-sm-6 col-form-label">Financial Year Start Date</label>
+      <div class="col-sm-6">
+        <input type="date" class="form-control input-underline input-lg sec" id="FinancialYrStartDate" placeholder="Enter Financial Year" autofocus
+    formControlName="FinancialYrStartDate" required>
+          <div    class="form-control-feedback"
+        *ngIf="FinancialYrStartDate.errors && (FinancialYrStartDate.dirty || FinancialYrStartDate.touched) ">
+ 
+   </div>
+      </div>
+          </div>
+
+             <div class="form-group row">
+    
+      <label for="FinancialYrEndDate" class=" col-sm-6 col-form-label">Financial Year End Date</label>
+      <div class="col-sm-6">
+        <input type="date" class="form-control input-underline input-lg sec" id="FinancialYrEndDate" placeholder="Enter Financial Year" autofocus
+    formControlName="FinancialYrEndDate" required>
+          <div    class="form-control-feedback"
+        *ngIf="FinancialYrEndDate.errors && (FinancialYrEndDate.dirty || FinancialYrEndDate.touched) ">
+                                         
+        </div>
+      </div>
+          </div>
+           </div>
+
+  <div class="col-md-1" >    </div>    
+ <div class="col-md-5 bill " >
+    <h5 class="text-center address">Bill To Address</h5>
+
+  <div class="form-group row">
+    
+      <label for="BilltoLine1" class=" col-sm-4 col-form-label">Line 1</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="Line1" placeholder="Enter Line 1" autofocus
+    formControlName="BilltoLine1" required>
+          <div    class="form-control-feedback"
+        *ngIf="BilltoLine1.errors && (BilltoLine1.dirty || BilltoLine1.touched) ">
+         </div>
+      </div>
+          </div>
+
+              <div class="form-group row">
+    
+      <label for="BilltoLine2" class=" col-sm-4 col-form-label">Line 2</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="BilltoLine2" placeholder="Enter Line 1" autofocus
+    formControlName="BilltoLine2" required>
+          <div    class="form-control-feedback"
+        *ngIf="BilltoLine2.errors && (BilltoLine2.dirty || BilltoLine2.touched) ">
+                     
+        </div>
+      </div>
+          </div>
+
+
+       <div class="form-group row">
+    
+      <label for="BilltoCity" class=" col-sm-4 col-form-label">City</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="BilltoCity" placeholder="Enter City" autofocus
+    formControlName="BilltoCity" required>
+          <div    class="form-control-feedback"
+        *ngIf="BilltoCity.errors && (BilltoCity.dirty || BilltoCity.touched) ">
+                        
+    </div>
+      </div>
+          </div>
+
+      <div class="form-group row">
+    
+      <label for="BilltoState" class=" col-sm-4 col-form-label">State</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="BilltoState" placeholder="Enter State" autofocus
+    formControlName="BilltoState" required>
+          <div    class="form-control-feedback"
+        *ngIf="BilltoState.errors && (BilltoState.dirty || BilltoState.touched) ">
+                        
+     </div>
+      </div>
+          </div>
+
+              <div class="form-group row">
+    
+      <label for="BilltoCountry" class=" col-sm-4 col-form-label">Country</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="BilltoCountry" placeholder="Enter Country" autofocus
+    formControlName="BilltoCountry" required>
+          <div    class="form-control-feedback"
+        *ngIf="BilltoCountry.errors && (BilltoCountry.dirty || BilltoCountry.touched) ">
+
+   </div>
+      </div>
+          </div>
+
+           <div class="form-group row">
+    
+      <label for="BilltoPostalCode" class=" col-sm-4 col-form-label">Postal Code</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="BilltoPostalCode" placeholder="Enter Postal Code" autofocus
+    formControlName="BilltoPostalCode" required maxlength="6">
+          <div    class="form-control-feedback"
+        *ngIf="BilltoPostalCode.errors && (BilltoPostalCode.dirty || BilltoPostalCode.touched) ">
+ 
+                     
+        </div>
+      </div>
+          </div>
+
+             <h5 class="text-center address">Ship To Address</h5>
+
+             <div class="form-group row">
+    
+      <label for="ShiptoLine1" class=" col-sm-4 col-form-label">Line 1</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="BilltoPostalCode" placeholder="Enter Line 1" autofocus
+    formControlName="ShiptoLine1" required>
+          <div    class="form-control-feedback"
+        *ngIf="ShiptoLine1.errors && (ShiptoLine1.dirty || ShiptoLine1.touched) ">
+                        
+          </div>
+      </div>
+          </div>
+
+             <div class="form-group row">
+    
+      <label for="ShiptoLine2" class=" col-sm-4 col-form-label">Line 2</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="ShiptoLine2" placeholder="Enter Line 1" autofocus
+    formControlName="ShiptoLine2">
+          <div    class="form-control-feedback"
+        *ngIf="ShiptoLine2.errors && (ShiptoLine2.dirty || ShiptoLine2.touched) ">
+                        
+          </div>
+      </div>
+          </div>
+  <div class="form-group row">
+    
+      <label for="ShiptoCity" class=" col-sm-4 col-form-label">City</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="ShiptoCity" placeholder="Enter City" autofocus
+    formControlName="ShiptoCity" required>
+          <div    class="form-control-feedback"
+        *ngIf="ShiptoCity.errors && (ShiptoCity.dirty || ShiptoCity.touched) ">
+                        
+          </div>
+      </div>
+          </div>
+
+            <div class="form-group row">
+    
+      <label for="ShiptoState" class=" col-sm-4 col-form-label">ShiptoState</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="ShiptoState" placeholder="Enter ShiptoState" autofocus
+    formControlName="ShiptoState" required>
+          <div    class="form-control-feedback"
+        *ngIf="ShiptoState.errors && (ShiptoState.dirty || ShiptoState.touched) ">
+                        
+       </div>
+      </div>
+          </div>
+
+          <div class="form-group row">
+    
+      <label for="ShiptoCountry" class=" col-sm-4 col-form-label">Country</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="ShiptoCountry" placeholder="Enter Country" autofocus
+    formControlName="ShiptoCountry" required>
+          <div    class="form-control-feedback"
+        *ngIf="ShiptoCountry.errors && (ShiptoCountry.dirty || ShiptoCountry.touched) ">
+                        
+      </div>
+      </div>
+          </div>
+
+       <div class="form-group row">
+    
+      <label for="ShiptoPostalCode" class=" col-sm-4 col-form-label">Postal Code</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control input-underline input-lg sec" id="ShiptoPostalCode" placeholder="Enter Line 1" autofocus
+    formControlName="ShiptoPostalCode" required>
+          <div    class="form-control-feedback"
+        *ngIf="ShiptoPostalCode.errors && (ShiptoPostalCode.dirty || ShiptoPostalCode.touched) ">
+                        
+         </div>
+      </div>
+          </div>
+
+       
+ <button type="submit" class="btn btn-success" >Submit</button>
+
+ 
+
+        </div>
+       </div>
+        </form>
+  

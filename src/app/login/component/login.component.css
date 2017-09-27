@@ -1,0 +1,60 @@
+
+/*to control the size of form elements =>textbox and button  */
+
+img{
+    height: 105px;
+
+
+}
+
+button{       
+
+    
+    background-color:#1D80EC;
+    color: white;
+    font-size: 20px;
+
+}
+
+p{
+
+  text-align: center;
+  margin-top: 50px;
+  color:grey;
+}
+
+
+.formelement
+{
+height: 45px;
+
+}
+
+
+.bgloginimage{
+background-image:url("./images/loginbg.png") ;
+background-repeat:no-repeat;
+background-position:center;
+margin-top: 70px;
+padding-bottom: 70px;
+
+
+}
+
+.startdiv{
+padding-top: 160px;
+margin-top: -56px;
+
+}
+
+p{
+  margin-top: 18px;
+}
+
+ .ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}

@@ -1,0 +1,59 @@
+ 
+        <div class="mainlogo"><img src="./assets/images/mainlogo.png" alt="logo"></div>  
+<div class="bgloginimage " >
+  
+<div class="startdiv">
+<div class="container">
+    <form #frm="ngForm"  class="form-horizontal" (ngSubmit)="login(myform.value) "  [formGroup]="myform"  validate >
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h4 class="text-center">Login to Your Account</h4>
+                <hr>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="sr-only" for="email">E-Mail Address</label>
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                       
+    <input type="text" name="username" class="form-control formelement" id="username" placeholder="Enter Username" autofocus
+    formControlName="username" [formControl]="myform.controls['username']"    required >
+                </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="sr-only" for="password">Password</label>
+                    <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+
+                        <input type="password" name="password" class="form-control formelement" id="password" placeholder=" Enter Password" 
+    formControlName="password" [formControl]="myform.controls['password']" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top: 1rem">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-outline-primary form-control  formelement" > Login</button>
+
+            </div>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+    
+   <footer>
+       <p > &copy; Copyright 2017 All Rights Reserved.</p>
+   </footer>

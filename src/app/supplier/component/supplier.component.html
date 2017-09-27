@@ -1,0 +1,191 @@
+
+<div class="container">
+     <form #frm="ngForm" (ngSubmit)="createform(myForm.value, myForm.valid)" [formGroup]="myform" validate>
+       <div class="row">
+       <div class="col-md-6 margin" >    
+              
+            <div class="form-group row" >
+              <label for="SupplierName" class=" col-sm-6 col-form-label">Supplier Name</label>
+              <div class="col-sm-6">
+                <select class="form-control dropdown" onchange="document.getElementById('SupplierName').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
+                      <option>Search...</option>
+                      <option value="one">Humera</option>
+                      <option value="two">Prajakta</option>
+                      <option value="three">Praneet</option>
+                      <option value="three">Aniket</option>
+                  </select>
+              </div>
+            </div>
+
+             
+             <div class="form-group row">
+                <label for="Inactive" class=" col-sm-6 col-form-label check"  >Inactive</label>
+              <input type="checkbox" class="checkbox" aria-label="Checkbox for following text input" class="checkbox"  >
+              <div class="col-sm-6">
+               
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="SupplierName" class=" col-sm-6 col-form-label">Supplier Name</label>
+              <div class="col-sm-6">
+     <input type="text" name="SupplierName" id="SupplierName"  class="form-control sec"   placeholder="Enter Supplier Name"  autofocus
+    formControlName="SupplierName" required >
+                  </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="SupplierCompanyRegno" class=" col-sm-6 col-form-label">Company Registration No</label>
+              <div class="col-sm-6">
+       <input type="text" class="form-control sec" id="SupplierCompanyRegno." placeholder="Enter Company Registration No." autofocus
+    formControlName="SupplierCompanyRegno" required>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label for="SupplierBalanceAmt" class=" col-sm-6 col-form-label">Balance Amount</label>
+              <div class="col-sm-6">
+                <input type="text" class="form-control sec" id="SupplierBalanceAmt" placeholder="Enter Balance Amount" autofocus
+    formControlName="SupplierBalanceAmt" required>
+              </div>
+            </div>
+
+          <div class="form-group row">
+            <label for="SupplierTelephone" class=" col-sm-6 col-form-label">Telephone</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control sec" id="SupplierTelephone" placeholder="Enter Telephone" autofocus
+    formControlName="SupplierTelephone" required>
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="SupplierFax" class=" col-sm-6 col-form-label">Fax</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control sec" id="SupplierFax" placeholder="Enter Fax" autofocus
+    formControlName="SupplierFax" required>
+            </div>
+          </div>
+
+          <div class="form-group row">
+          <label for="SupplierEmail" class=" col-sm-6 col-form-label">Email</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control sec" id="SupplierEmail" placeholder="Enter Email" autofocus
+    formControlName="SupplierEmail" required>
+          </div>
+        </div>
+
+        <div class="form-group row">
+          <label for="SupplierContactPerson" class=" col-sm-6 col-form-label">Contact Person</label>
+          <div class="col-sm-6">
+            <input type="text" class="form-control sec" id="SupplierContactPerson" placeholder="Enter Contact Person" autofocus
+    formControlName="SupplierContactPerson" required>
+          </div>
+          </div>
+          <div class="form-group row">
+          <label for="SupplierRemarks" class=" col-sm-6 col-form-label">Remarks</label>
+          <div class="col-sm-6">
+             <textarea class="form-control sec" id="SupplierRemarks" rows="6" Placeholder="Enter Remarks here" ></textarea>
+          </div>
+          </div>
+    </div>
+<div class="col-md-1"></div>
+   <div class="col-md-5 marg" >   
+
+    <h5 class="text-center address">Bill To Address</h5>
+      <div class="form-group row">
+      <label for="SupplierBilltoLine1" class=" col-sm-4 col-form-label lab">Line 1</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control sec1" id="SupplierBilltoLine1" placeholder="Enter Line 1" autofocus
+    formControlName="SupplierBilltoLine1" required>
+      </div>
+    </div>
+      <div class="form-group row">
+      <label for="SupplierBilltoLine2" class=" col-sm-4 col-form-label lab">Line 2</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control sec1" id="SupplierBilltoLine2" placeholder="Enter Line 2" autofocus
+    formControlName="SupplierBilltoLine2" required>
+      </div>
+    </div>
+
+      <div class="form-group row">
+      <label for="SupplierBilltoCity" class=" col-sm-4 col-form-label lab">City</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control sec1" id="SupplierBilltoCity" placeholder="Enter City" autofocus
+    formControlName="SupplierBilltoCity" required>
+      </div>
+    </div>
+      <div class="form-group row">
+      <label for="SupplierBilltoState" class=" col-sm-4 col-form-label lab">State</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control sec1" id="SupplierBilltoState" placeholder="Enter State" autofocus
+    formControlName="SupplierBilltoState" required>
+      </div>
+    </div>
+      <div class="form-group row">
+      <label for="SupplierBilltoCountry" class=" col-sm-4 col-form-label lab">Country</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control sec1" id="SupplierBilltoCountry" placeholder="Enter Country" autofocus
+    formControlName="SupplierBilltoCountry" required>
+      </div>
+    </div>
+      <div class="form-group row">
+      <label for="SupplierBilltoPostalCode" class=" col-sm-4 col-form-label lab">Postal Code</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control sec1" id="SupplierBilltoPostalCode" placeholder="Enter Postal Code" autofocus
+    formControlName="SupplierBilltoPostalCode" required>
+      </div>
+    </div>
+
+    <h5 class="text-center address">Ship To Address</h5>
+      <div class="form-group row">
+      <label for="SupplierShiptoLine1" class=" col-sm-4 col-form-label lab">Line 1</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control sec1" id="SupplierShiptoLine1" placeholder="Enter Line 1" autofocus
+    formControlName="SupplierShiptoLine1" required>
+      </div>
+    </div>
+      <div class="form-group row">
+      <label for="SupplierShiptoLine2" class=" col-sm-4 col-form-label lab">Line 2</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control sec1" id="SupplierShiptoLine2" placeholder="Enter Line 2" autofocus
+    formControlName="SupplierShiptoLine2" required>
+      </div>
+    </div>
+      <div class="form-group row">
+      <label for="SupplierShiptoCity" class=" col-sm-4 col-form-label lab">City</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control sec1" id="SupplierShiptoCity" placeholder="Enter City" autofocus
+    formControlName="SupplierShiptoCity" required>
+      </div>
+    </div>
+      <div class="form-group row">
+      <label for="SupplierShiptoState" class=" col-sm-4 col-form-label lab">State</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control sec1" id="SupplierShiptoState" placeholder="Enter State" autofocus
+    formControlName="SupplierShiptoState" required>
+      </div>
+    </div>
+      <div class="form-group row">
+      <label for="SupplierShiptoCountry" class=" col-sm-4 col-form-label lab">Country</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control sec1" id="SupplierShiptoCountry" placeholder="Enter Country" autofocus
+    formControlName="SupplierShiptoCountry" required>
+      </div>
+    </div>
+      <div class="form-group row">
+      <label for="SupplierShiptoPostalCode" class=" col-sm-4 col-form-label lab">Postal Code</label>
+      <div class="col-sm-6">
+        <input type="text" class="form-control sec1" id="SupplierShiptoPostalCode" placeholder="Enter Postal Code" autofocus
+    formControlName="SupplierShiptoPostalCode" required>
+      </div>
+    </div>
+     <button type="delete" class="btn btn-default btn2">Delete</button>    
+     <button type="create" class="btn btn-default btn2">New</button>    
+     <button type="submit" class="btn btn-default btn2">Save</button>    
+     <button type="cancel" class="btn btn-default btn2">Cancel</button>
+      </div>
+       </div>
+    </form>
+    
+  </div>
+ 
